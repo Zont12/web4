@@ -1,0 +1,41 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+    background-image: url("https://files.oaiusercontent.com/file-CU2sECmHtTPjUNBkpAMSwM?se=2025-02-12T06%3A35%3A25Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D5a6cf2d5-3459-43e5-bd13-b18a638639f3.webp&sig=Z331q4S5w2s9uqAZm56hzWPtr31mHamsWMT8eCHeD1M%3D");
+    background-size: cover; /* Заполняет всю область */
+    background-position: center; /* Центрирование */
+    background-repeat: no-repeat; /* Без повторений */
+  }
+
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
+
